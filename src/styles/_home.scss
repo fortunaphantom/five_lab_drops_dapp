@@ -1,0 +1,154 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+
+  .btn {
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(255, 0, 106);
+    color: white;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: rgb(255, 71, 147);
+    }
+    &:active {
+      background-color: rgb(255, 0, 106);
+    }
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+    
+    .title {
+      text-transform: uppercase;
+      color: white;
+      font-size: 70px;
+      width: 240px;
+      font-weight: bold;
+
+      &:first-child {
+        text-align: right;
+      }
+    }
+
+    img {
+      width: 120px;
+      margin: 0 20px;
+    }
+
+    .connect {
+      position: absolute;
+      right: 10px;
+      top: 30px;
+    }
+
+    
+
+    .social-area {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: 0px;
+      top: 70px;
+      a {
+        display: flex;
+        width: 50px;
+      }
+      img {
+        display: flex;
+        margin: 0;
+      }
+    }
+  }
+
+  .image-flipper {
+    img {
+      width: 15vh;
+      display: block;
+    }
+  }
+
+  .content {
+    padding: 0 10px;
+    display: flex;
+    gap: 10px;
+
+    .mint {
+      width: max-content;
+      .arts {
+        display: grid;
+        gap: 6px;;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 12px;
+        background-color: #0003;
+        border-radius: 10px;
+      }
+      .mint-area {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px 0 0 0;
+
+        input {
+          border: 1px solid rgb(255, 0, 119);
+          padding: 9px 16px;
+          font-size: 14px;
+          width: 100px;
+        }
+
+        .status {
+          font-size: 40px;
+          margin: 0;
+          text-align: center;
+          color: rgba(255, 0, 119);
+          font-weight: bold;
+        }
+
+        .mint-control {
+          margin: 10px 0 0 0;
+          display: flex;
+          gap: 10px;
+          width: 100%;
+          justify-content: center;
+
+          .btn {
+            font-size: 20px;
+            border-radius: 20px;
+            font-weight: bold;
+  
+            &.minus, &.plus {
+              width: 50px;
+              height: 50px;
+              border-radius: 50px;
+            }
+          }
+
+        }
+
+        .price {
+          font-size: 30px;
+          margin: 10px 0 0 0;
+          color: #ccc;
+        }
+      }
+    }
+
+    .roadmap {
+      width: 100%;
+      background-color: #0003;
+      height: calc(100vh - 170px);
+      border-radius: 10px;
+      padding: 12px;
+      color: white;
+    }
+  }
+}
